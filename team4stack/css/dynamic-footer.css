@@ -1,0 +1,62 @@
+/* Dynamic Footer Styles */
+
+.footer-team-section {
+    display: none; /* Hide the Our Team section */
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #495057;
+}
+
+.footer-team-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-team-member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    width: calc(50% - 8px);
+    box-sizing: border-box;
+}
+
+.footer-member-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-member-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.footer-member-role {
+    margin: 0;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-team-member {
+        width: 100%;
+    }
+    
+    .footer-member-image {
+        width: 40px;
+        height: 40px;
+    }
+}
