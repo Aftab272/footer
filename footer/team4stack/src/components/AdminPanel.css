@@ -1,0 +1,282 @@
+.admin-panel {
+  padding: 3rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-header h1 {
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.admin-header p {
+  color: #64748b;
+  margin: 0;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.admin-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.links-management {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+}
+
+.links-management h2 {
+  color: #1e293b;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.form-section {
+  margin-bottom: 3rem;
+}
+
+.form-section h3 {
+  color: #334155;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.link-form {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.link-form input {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.link-form button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.link-form button:hover {
+  background-color: #4338ca;
+}
+
+.links-list h3 {
+  color: #334155;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.links-table {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-item {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.link-item:last-child {
+  border-bottom: none;
+}
+
+.link-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.link-name {
+  flex: 1;
+  font-weight: 500;
+  color: #1e293b;
+  font-size: 1.1rem;
+}
+
+.link-url {
+  flex: 2;
+  color: #64748b;
+  word-break: break-all;
+  font-size: 1.1rem;
+}
+
+.link-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.link-actions button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.link-actions button:first-child {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.link-actions button:first-child:hover {
+  background-color: #e2e8f0;
+}
+
+.link-actions button:last-child {
+  background-color: #ef4444;
+  color: white;
+}
+
+.link-actions button:last-child:hover {
+  background-color: #dc2626;
+}
+
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.edit-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.edit-actions button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.edit-actions button:first-child {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.edit-actions button:first-child:hover {
+  background-color: #4338ca;
+}
+
+.edit-actions button:last-child {
+  background-color: #94a3b8;
+  color: white;
+}
+
+.edit-actions button:last-child:hover {
+  background-color: #64748b;
+}
+
+.admin-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #4f46e5;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.back-link:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .link-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .link-actions {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-panel {
+    padding: 1.5rem;
+  }
+  
+  .admin-header h1 {
+    font-size: 2rem;
+  }
+  
+  .links-management {
+    padding: 1.5rem;
+  }
+  
+  .link-form {
+    flex-direction: column;
+  }
+  
+  .link-form input,
+  .link-form button {
+    width: 100%;
+  }
+  
+  .link-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .link-actions {
+    align-self: flex-end;
+    width: 100%;
+  }
+  
+  .edit-form {
+    flex-direction: column;
+  }
+  
+  .edit-form input,
+  .edit-actions {
+    width: 100%;
+  }
+}
